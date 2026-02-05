@@ -63,6 +63,7 @@
             height: auto;
             border-radius: 10px;
             mix-blend-mode: multiply; /* Makes GIF blend with background */
+            pointer-events: none; /* ADD THIS LINE — clicks go through the GIF */
         }
 
         .modal {
@@ -99,14 +100,7 @@
             border-radius: 5px;
             font-size: 16px;
         }
-.gif-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    mix-blend-mode: multiply;
-    /* ADD THIS LINE */
-    z-index: 1;   /* Low layer */
-}
+
         .modal button:hover {
             background-color: darkred;
         }
@@ -185,4 +179,3 @@
     </script>
 </body>
 </html>
-
